@@ -15,6 +15,7 @@ import hpp from 'hpp';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import compression from 'compression';
+import { webhookCheckout } from './controllers/booking.controller.js';
 
 const app = express();
 
@@ -49,6 +50,13 @@ const globalRateLimiter = rateLimit({
 });
 
 app.use('/api', globalRateLimiter);
+
+// As stripe needs the body as raw not json
+app.post(
+  '/webhook-checkout',
+  express.raw({ type: 'application/json' }),
+  webhookCheckout,
+);
 
 // Middlewares
 app.use(morgan('dev'));

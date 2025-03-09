@@ -22,7 +22,7 @@ import { getAllBooking } from '../controllers/view.controller.js';
 export const router = express.Router();
 
 //The response from the middleware  will serve to all the pug templates
-router.get('/', createBookingCheckout, isLoggedIn, getOverview);
+router.get('/', isLoggedIn, getOverview);
 
 router.get('/signup', getResetForm);
 
