@@ -1,0 +1,444 @@
+@media (max-width: 768px) {
+  html {
+    zoom: 1; /* Reset zoom */
+    font-size: 32.5%;
+  }
+
+  body {
+    transform: none !important; /* Ensure no scaling */
+    font-size: 15px;
+  }
+
+  body {
+    width: 100vw;
+  }
+  /* Header */
+
+  a.nav__el {
+    padding: 0;
+  }
+
+  .heading-secondary {
+    font-size: 15px;
+  }
+  .header {
+    /* width: 69rem; */
+    font-size: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: -5px;
+    margin-top: 5px;
+  }
+
+  .nav-el {
+    font-size: 10px;
+  }
+
+  .header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .nav__el {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav__el--cta {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .nav__user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .nav.nav--user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav__el {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  nav.nav.nav--tours {
+    display: none;
+  }
+
+  button.nav__el.nav__el--cta {
+    padding: 0;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid black !important;
+    border-radius: 10px;
+    margin-left: 1rem;
+  }
+
+  .header__logo img {
+    margin-top: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #444;
+  }
+
+  .footer__logo img {
+    width: 40px; /* Smaller logo for mobile */
+    height: auto;
+    display: none;
+  }
+
+  .footer_nav {
+    color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row; /* Stack links in mobile */
+    gap: 3rem !important;
+  }
+
+  .footer_nav li {
+    display: block;
+  }
+
+  .footer_nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 5px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  /* Media query for mobile devices */
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer__logo img {
+    width: 35px; /* Even smaller logo for ultra-small screens */
+  }
+
+  .footer_nav {
+    gap: 8px;
+  }
+
+  .footer_nav a {
+    font-size: 9px;
+  }
+
+  .footer__copyright {
+    font-size: 11px;
+    margin-bottom: 2rem;
+  }
+
+  /* overview */
+  .card-container {
+    font-size: 12px !important;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .g-main {
+    margin-top: 1rem;
+  }
+
+  .card {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 12px !important;
+  }
+
+  .card {
+    margin-bottom: 5rem;
+  }
+
+  .bg-image {
+    /* visibility: hidden; */
+  }
+
+  .heading-tertirary {
+    font-size: 15px;
+  }
+
+  .card__data {
+    font-size: 8px;
+  }
+
+  .card__details p {
+    display: none;
+  }
+
+  /* login */
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .img img {
+    width: 0 !important;
+  }
+
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-content img {
+    margin: 0 auto;
+  }
+
+  .login-content h2 {
+    font-size: 17px;
+  }
+
+  .input-div > div > input {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 12px !important;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .input-div {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .input-div .i {
+    margin-right: 10px;
+  }
+
+  .form__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .forgotpass {
+    text-align: right;
+    font-size: 16px;
+    color: #3498db;
+    text-decoration: none;
+    margin-bottom: 15px;
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .btn {
+    background-color: #55c57a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #73ce92;
+  }
+  .container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .img img {
+    display: none; /* Hide background image on small screens */
+  }
+
+  .nav__el,
+  .nav__el:link {
+    font-size: 12px !important;
+  }
+
+  button.nav__el.nav__el--cta a {
+    font-size: 12px !important;
+  }
+  /* signup */
+  form.signupform {
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-div.pass {
+    margin-top: -2px;
+  }
+
+  /* Forgot password */
+  .input-div {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .fp-container .input-div.one {
+    box-shadow: none;
+  }
+  .link {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .fp-container h2 {
+    font-size: 17px;
+  }
+
+  .fp-container p {
+    font-size: 12px;
+  }
+
+  /* account */
+  .user-view__menu.active nav.user-view__menu {
+    display: none !important;
+  }
+
+  form.form-user-data label {
+    font-size: 10px;
+  }
+
+  button#toggle-form {
+    left: 170px;
+  }
+
+  /* tour */
+  .heading-box h1 {
+    font-size: 13px;
+  }
+  .overview-box span {
+    font-size: 9px;
+  }
+  .cta__img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cta__content h2 {
+    font-size: 13px;
+    margin-left: -25px;
+    margin-right: 10px;
+  }
+
+  .cta__content p {
+    margin-left: -25px;
+    margin-right: 10px;
+  }
+
+  .cta {
+    padding-right: 10px;
+  }
+
+  .status {
+    margin-top: 4px;
+  }
+
+  .booking-footer {
+    justify-content: space-evenly;
+  }
+
+  .cancel-tour .btn {
+    background-color: rgba(255, 0, 0, 0.826);
+  }
+
+  .no-bookings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between text and button */
+    flex-wrap: wrap;
+    max-width: 60%;
+  }
+
+  .no-bookings h1 {
+    font-size: 16px; /* Adjust text size */
+    white-space: nowrap; /* Prevents line break */
+    margin-left: 20px;
+  }
+
+  .no-bookings a {
+    width: 200%;
+    font-size: 0.9rem;
+    padding: 8px 12px; /* Adjust button size */
+  }
+
+  /* admin */
+  .booking-item {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+  .booking-item span {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+}

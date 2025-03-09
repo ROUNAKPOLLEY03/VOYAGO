@@ -1,0 +1,40 @@
+extends base
+
+block content 
+  main.g-main.booking-main
+      img.bg-image.bookingsbg-image(src='/img/cover-2.jpg')
+      
+      if bookings.length === 0
+        div.no-bookings
+            h1 No bookings found.
+            a.btn.btn--green.btn--small.x1(href=`/`) Explore our amazing tours
+      else
+        .card-container
+          each booking in bookings
+            .card
+              .card__header
+                .card__picture
+                  .card__picture-overlay &nbsp;
+                  img.card__picture-img(src=`/img/tours/${booking.tour.imageCover}`, alt=`${booking.tour.name}`)
+                h3.heading-tertirary
+                  span= booking.tour.name
+
+              .card__details
+                h4.card__sub-heading= `${booking.tour.difficulty} ${booking.tour.duration}-day tour`
+                p.card__text= booking.tour.summary
+                .card__data
+                  svg.card__icon
+                    use(xlink:href='/img/icons.svg#icon-map-pin')
+                  span= booking.tour.startLocation.description
+                .card__data
+                  svg.card__icon
+                    use(xlink:href='/img/icons.svg#icon-calendar')
+                  span= new Date(booking.tour.startDates[0]).toLocaleString('en-us', { dateStyle: 'long' })
+
+              .card__footer.booking-footer
+                .status 
+                    span.btn.btn--green.btn--small.x1(class=`status-${booking.status}`) #{booking.status}
+                .cancel-tour 
+                    a.btn.btn--green.btn-red.btn--small.x1(href=`` data-bookingID=`${booking.id}`) Cancel Tour
+
+  include _footer

@@ -1,0 +1,27 @@
+extends base
+
+block content
+    .body 
+      img.wave(src="/img/login/wave.png")
+      .container
+        .img
+          img(src="/img/login/bg.svg")
+        .login-content
+          form.form
+            img(src="/img/login/avatar.svg")
+            h2.title LOG INTO YOUR ACCOUNT
+            .input-div.one
+              .i
+                i.fas.fa-user
+              .div
+                input#email.form__input(type='email', placeholder='EMAIL ADDRESS', required)
+            .input-div.pass
+              .i
+                i.fas.fa-lock
+              .div
+                input#password.form__input(type='password', placeholder='PASSWORD', required, minlength='8')
+            a.forgotpass(href="#") Forgot Password?
+            button.btn Login
+      
+
+      

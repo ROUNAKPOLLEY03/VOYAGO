@@ -1,0 +1,13 @@
+footer.footer 
+    .footer__logo.header__logo
+        img(src="/img/favicon.png" alt="Voyago logo")
+    ul.footer_nav 
+        li: a(href='#') About us
+        li: a(href='#') Download apps
+        li: a(href='#') Become a guide
+        li: a(href='#') Careers
+        li: a(href='#') Contact
+    p.footer__copyright &copy; <span id="year">2025</span> Voyago. All rights reserved.
+
+script.
+    document.getElementById("year").textContent = new Date().getFullYear();

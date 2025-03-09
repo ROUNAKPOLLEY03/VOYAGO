@@ -1,0 +1,24 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  p Congratulations! Your tour booking has been confirmed. Below are the details of your booking:
+
+  p To view your booking details or make any changes, please click the button below:
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') View My Booking
+
+  p We look forward to welcoming you on this amazing adventure!
+
+  p If you need any help with booking your next tour, please don't hesitate to contact our helpline at 
+    a(href='mailto:voyagoapp23@gmail.com', style='color: blue; text-decoration: underline;') voyagoapp23@gmail.com
+  br
+  p &copy; 2025 Voyago. All rights reserved.

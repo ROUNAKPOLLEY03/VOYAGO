@@ -1,0 +1,62 @@
+.booking-list {
+  list-style: none;
+  padding: 0;
+  width: 70%;
+  /* margin: auto; */
+  margin: 0 auto;
+}
+
+.booking-item {
+  background: rgb(158, 228, 177);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name,
+.tour-name,
+.user-email,
+.date,
+.tour-name,
+.status,
+.price {
+  font-size: 16px;
+  color: #333;
+  width: 15%;
+}
+
+.tour-name,
+.user-email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." if text overflows */
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.accept {
+  background-color: #28a745;
+  color: white;
+}
+
+.decline {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}

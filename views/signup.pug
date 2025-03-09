@@ -1,0 +1,36 @@
+extends base
+
+block content
+    .body 
+      img.wave(src="/img/login/wave.png")
+      .container
+        .img
+          img(src="/img/login/bg.svg")
+        .login-content.lc
+          form.signupform
+            img(src="/img/login/avatar.svg")
+            h2.title CREATE NEW ACCOUNT
+            .input-div.one
+              .i
+                i.fas.fa-user
+              .div
+                input#name.form__input(type='text', placeholder='NAME', required)
+            .input-div.one
+              .i
+                i.fas.fa-user
+              .div
+                input#email.form__input(type='email', placeholder='EMAIL ADDRESS', required)
+            .input-div.pass
+              .i
+                i.fas.fa-lock
+              .div
+                input#password.form__input(type='password', placeholder='PASSWORD', required, minlength='8')
+            .input-div.passcon
+              .i
+                i.fas.fa-lock
+              .div
+                input#passwordconfirm.form__input(type='password', placeholder='PASSWORD CONFIRM', required, minlength='8')
+            button.btn Sign Up
+      
+      //- script(src='/js/bundle.js')
+      

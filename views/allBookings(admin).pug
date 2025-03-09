@@ -1,0 +1,17 @@
+extend base
+
+block content
+  if bookings.length === 0
+     h2(style="color: green; font-weight: bold; margin: 0 auto; font-size: 1.6rem") No new bookings
+  else
+    ul.booking-list
+      each booking in bookings
+        if booking.status !== 'confirm' 
+          li.booking-item
+            span.user-name #{booking.user.name}
+            span.user-email #{booking.user.email}
+            span.tour-name #{booking.tour.name}
+            span.date #{new Date(booking.createdAt).toDateString()} 
+            div.buttons
+              button.accept(data-bookingID=booking.id) Accept
+              button.decline(data-bookingID=booking.id) Decline

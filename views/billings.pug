@@ -1,0 +1,13 @@
+extend base
+
+block content
+  if bookings.length === 0
+     h2(style="color: green; font-weight: bold; margin: 0 auto; font-size: 1.6rem") No new bookings
+  else
+    ul.booking-list
+      each booking in bookings
+        li.booking-item
+            span.tour-name #{booking.tour.name}
+            span.date #{new Date(booking.createdAt).toDateString()}
+            span.status #{booking.status}
+            span.price $#{booking.tour.price} 

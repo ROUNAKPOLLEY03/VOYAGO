@@ -1,0 +1,12 @@
+extends base
+
+block content
+    div.error-body
+        div.error-page
+            div.content
+                h1=`Error code: ${code}`
+                h4=title
+                p=msg
+                div.btns
+                    a(href="/") return home
+                    
