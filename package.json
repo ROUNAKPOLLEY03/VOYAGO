@@ -1,11 +1,11 @@
 {
-  "name": "Voyago",
+  "name": "voyago",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon -r dotenv/config --experimental-json-modules server.js",
+    "start": "node server.js",
     "import": "node dev-data/data/import-dev-data.js --import",
     "delete": "node dev-data/data/import-dev-data.js --delete",
     "debug": "ndb server.js",
@@ -46,5 +46,8 @@
   "devDependencies": {
     "eslint": "^9.10.0",
     "parcel-bundler": "^1.12.5"
+  }, 
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
