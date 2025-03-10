@@ -21,6 +21,6 @@
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/voyago.git
+   git clone https://github.com/ROUNAKPOLLEY03/voyago.git
    cd voyago
    ```

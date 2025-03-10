@@ -16,7 +16,7 @@ import {
   protectTourRoute,
   restrictTo,
 } from '../controllers/auth.controller.js';
-import { createBookingCheckout } from '../controllers/booking.controller.js';
+// import { createBookingCheckout } from '../controllers/booking.controller.js';
 import { getAllBooking } from '../controllers/view.controller.js';
 
 export const router = express.Router();

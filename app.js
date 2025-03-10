@@ -50,7 +50,7 @@ const globalRateLimiter = rateLimit({
 });
 
 app.use('/api', globalRateLimiter);
-
+console.log('here');
 // As stripe needs the body as raw not json
 app.post(
   '/webhook-checkout',
